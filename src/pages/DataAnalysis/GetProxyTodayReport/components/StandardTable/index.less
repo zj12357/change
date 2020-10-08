@@ -1,0 +1,29 @@
+@import '~antd/es/style/themes/default.less';
+
+.standardTable {
+  :global {
+    .ant-table-pagination {
+      margin-top: 24px;
+    }
+    .ant-table-scroll {
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .ant-table-footer {
+      padding: 0;
+      ::-webkit-scrollbar {
+        display: block !important;
+      }
+      tr {
+        td {
+          padding: 12px 8px;
+        }
+      }
+    }
+  }
+
+  .tableAlert {
+    margin-bottom: 16px;
+  }
+}
